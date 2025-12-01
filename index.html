@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assent/style.css">
+</head>
+<body>
+<header>
+    <img src="imagenes/logopeluqueria.png" class="logo">
+    <h1>Achurando a Domicilio</h1>
+</header>
+
+    <nav>
+        <button onclick="mostrarCrear()">CREAR</button>
+        <button onclick="mostrarListar()">LISTAR</button>
+        <button onclick="mostrarBuscar()">BUSCAR</button>
+    </nav>
+    <main>
+        <div id="crear" style="display: none;">
+            <h2>Crear Turno</h2>
+            <form>
+                <label>Nombre: </label>
+                <input type="text" id="nombre">
+                <label>Apellido: </label>
+                <input type="text" id="apellido">
+                <label>Dia del turno: </label>
+                <input type="text" id="dia">
+                <label>Hora: </label>
+                <input type="text" id="hora">
+                <label>Número de tel: </label>
+                <input type="text" id="telefono">
+
+            </form>
+            <button onclick="guardarTurno()">Guardar Turno</button>
+        </div>
+        <div id="listar" style="display: none;">
+            <h2>Turnos Registrados</h2>
+            <button onclick="listarTodos()">Mostrar Todos</button>
+            <button onclick="activarBusquedaFecha()">Buscar por Dia</button>
+            <div id="buscarDia" style="display: none;">
+                <label>Fecha:</label>
+                <input type="text" id="diaBuscar">
+                <button onclick="listarPorDia()">Buscar</button>
+            </div>
+            <div id="listado"></div>
+        </div>
+        <div id="buscar" style="display: none;">
+            <h2>Buscar Turno</h2>
+            <label>Nombre del Cliente:</label>
+            <input type="text" id="buscarNombre">
+            <button onclick="buscarPorNombre()">Buscar</button>
+            <div id="resultadoBusqueda"></div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

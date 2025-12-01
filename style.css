@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(21, 44, 54); 
+    margin: 100px;
+    padding: 100px;
+}
+.logo{
+    display: flex;
+    width: 150px;
+    height: 150px;
+}
+nav{
+    background-color: rgb(21, 44, 54);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+nav button{
+    background-color:  rgb(84, 150, 179);
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+main{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+input{
+    display: flex;
+    margin: 5px auto;
+    padding: 8px;
+    border-radius: 4px;
+    background-color:  rgb(84, 150, 179); 
+}
+button{
+    margin-top: 8px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    background-color:  rgb(214, 214, 214); 
+}
+div{
+    background-color: rgb(214, 214, 214);
+    padding: 20px;
+    border-radius: 8px;
+}
